@@ -4,16 +4,21 @@
 }
 
 body, html {
-    width: 100%;
-    height: 100%;
+    width: 1500px;
+    height: 1000px;
     padding: 0;
     margin: 0;
     --color1: #9e2a2b;
     --color2: #fff3b0;
     --color3: #335c67;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    --color4: #ffc6ff;
+    --color5: #bdb2ff;
+    --color6: #a0c4ff;
+    --color7: #9bf6ff;
+    display: grid;
+    grid-row: 1 / 7;
+    grid-column: 1 / 6;
+    
 }
 
 header {
@@ -31,7 +36,7 @@ header {
 
 }
 
-main {
+.where-my-name-is {
     width: 500px;
     height: 130px;
     background-color: var(--color2);
@@ -66,4 +71,45 @@ footer {
     font-size: 4rem;
     padding-bottom: 60px;
     padding-top: 0px;
+}
+
+.graph-header{
+    grid-row: 1 / 3;
+    grid-column: 1 / 12;
+    background-color: var(--color4);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.content {
+    grid-row: 3 / 12;
+    grid-column: 1 / 10;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.content-sidebar {
+    grid-row: 3 / 12;
+    grid-column: 10 / 12;
+    background-color: var(--color6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph-footer {
+    grid-row: 12 / 14;
+    grid-column: 1 / 12;
+    background-color: var(--color7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
